@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+
+    margin: 0px;
+    background-color: rgb(237,237,237);
+}
+
+.title{
+    font-size: 86px;
+    font-weight: bold;
+}
+
+.sketchPad{
+    display: flex;
+    
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    border: solid red;
+}
+
+.btnRow{
+    display: flex;
+    flex-direction: row;
+}
