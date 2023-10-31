@@ -1,11 +1,27 @@
 body{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;    
     justify-content: center;
 
     margin: 0px;
     background-color: rgb(237,237,237);
+}
+
+.leftColumn{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.middleColumn{
+    flex: 2;
 }
 
 .title{
@@ -20,10 +36,21 @@ body{
     height: 500px;
     width: 500px;
     background-color: rgb(255, 255, 255);
-    border: solid red;
+    box-shadow: 0px 0px 20px 3px grey;
 }
 
 .btnRow{
     display: flex;
     flex-direction: row;
+}
+
+.gridColor[type=color] {
+    display: none;
+}
+span {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px; 
+  background-color:red;
+  display:inline-block;
 }

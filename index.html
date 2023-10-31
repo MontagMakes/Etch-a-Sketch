@@ -8,11 +8,21 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+
+        <div class="leftColumn">
+            <div class="btnsContainer">
+                <span><input type="color" name="gridColor" class="gridColor" value="black"></span>
+                <button class="modeChosenColor"></button>
+                <button class="modeRandomColor"></button>
+                <button class="modeEraser"></button>
+                <button class="Clear"></button>
+                <input type="range" name="range" class="gridSize">
+            </div>
+        </div>
+
         <div class="middleColumn">
             <p class="title">Etch-a-sketch</p>
-            <div class="sketchPad">
-
-            </div>
+            <div class="sketchPad"></div>
             <div class="btnRow">
                 <button class="btnChangeNoOfSquares">
                     Grid size
@@ -20,12 +30,10 @@
                 <button class="btnClear">
                     Clear
                 </button>
-                <input type="color" class="gridColor" value="#ff0000">
+                
                 
             </div>
         </div>
-
         <script src="script.js"></script>
     </body>
-
 </html>
