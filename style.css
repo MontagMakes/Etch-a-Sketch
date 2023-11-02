@@ -3,6 +3,7 @@ body{
     flex-direction: row;    
     justify-content: center;
 
+    height: 100vh;
     margin: 0px;
     background-color: rgb(237,237,237);
 }
@@ -39,13 +40,22 @@ body{
     box-shadow: 0px 0px 20px 3px grey;
 }
 
+.btn{
+    width: 150px;
+    height: 40px;
+}
+
 .btnRow{
     display: flex;
     flex-direction: row;
 }
-
-.gridColor[type=color] {
+input[type=color]{
     display: none;
+}
+.btnColor {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
 }
 span {
   border-radius: 50%;

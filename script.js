@@ -11,18 +11,30 @@ let eventMouseDown = false;
 let sketchPad = document.querySelector(".sketchPad");
 let btnChangeGridSize = document.querySelector(".btnChangeNoOfSquares");
 let btnClear = document.querySelector(".btnClear");
-let gridColor = document.querySelector(".gridColor");
+let btnColor = document.querySelector(".btnColor");
 
-console.log(gridColor.value)
-gridColor.addEventListener("input", ()=>{
-    selectColor = gridColor.value;
-    gridColor.style.backgroundColor = gridColor.value;
+
+btnColor.addEventListener("input", ()=>{
+    selectColor = btnColor.value;
+    btnColor.style.backgroundColor = btnColor.value;
 })
 
 sketchPad.onmousedown = () => (eventMouseDown = true)
 sketchPad.onmouseup = () => (eventMouseDown = false)
 
 createGrid(noOfSquares);
+
+inputColor()
+function inputColor(){
+    const span = document.querySelector("span");
+    const input = document.querySelector(".btnColor");    
+    span.addEventListener("click", ()=>{
+        span.style.backgroundColor = input.value
+        input.click();
+        
+    })
+    
+}
 
 // Grid Creation
 function createGrid(noOfSquares){
