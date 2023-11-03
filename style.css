@@ -18,7 +18,10 @@ body{
 .btnsContainer{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    align-items: center;
+    width: 250px;
+    
+    gap: 30px;
 }
 
 .middleColumn{
@@ -32,7 +35,6 @@ body{
 
 .sketchPad{
     display: flex;
-    
     flex-wrap: wrap;
     height: 500px;
     width: 500px;
@@ -41,26 +43,31 @@ body{
 }
 
 .btn{
-    width: 150px;
+    font-size: 1rem;
+    width: 100%;
     height: 40px;
+    border-radius: 5px;
+    border: 1px solid ;
+    
 }
 
 .btnRow{
     display: flex;
     flex-direction: row;
 }
-input[type=color]{
-    display: none;
-}
-.btnColor {
+
+.inputColor {
     height: 100px;
     width: 100px;
-    border-radius: 100px;
+    border: none;
 }
-span {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px; 
-  background-color:red;
-  display:inline-block;
+
+
+.btnEraser, .btnClear {
+    cursor: grab;
+}
+.gridSize {
+    font-size: 2rem;
+    margin: 0px;
+
 }
