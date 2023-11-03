@@ -10,7 +10,7 @@ const btnEraser = document.querySelector(".btnEraser");
 
 const gridSize = document.querySelector(".gridSize")
 
-let selectedMode = "eraser";
+let selectedMode = "color";
 let selectColor = "lightblue";
 
 const squaresMin = 2;
